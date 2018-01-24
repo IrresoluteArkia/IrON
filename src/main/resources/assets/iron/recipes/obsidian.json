@@ -1,0 +1,16 @@
+{
+  "type": "forge:ore_shapeless",
+  "group": "recipes10",
+  "ingredients": [
+    {
+      "item": "minecraft:water_bucket"
+    },
+    {
+      "item": "minecraft:lava_bucket"
+    }
+  ],
+  "result": {
+    "item": "minecraft:obsidian",
+    "data": 0
+  }
+}

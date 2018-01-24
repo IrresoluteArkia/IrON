@@ -1,0 +1,5 @@
+{
+    "variants": {
+        "normal": { "model": "iron:nether_iron_ore" }
+    }
+}

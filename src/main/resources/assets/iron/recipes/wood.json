@@ -1,0 +1,18 @@
+{
+  "type": "forge:ore_shapeless",
+  "group": "recipes9",
+  "ingredients": [
+    {
+      "item": "iron:IrON_mixture"
+    },
+    {
+      "item": "minecraft:dye",
+      "data": 15
+    }
+  ],
+  "result": {
+    "item": "minecraft:grass",
+    "data": 0,
+    "count": 4
+  }
+}

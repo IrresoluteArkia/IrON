@@ -1,0 +1,19 @@
+{
+  "type": "forge:ore_shapeless",
+  "group": "recipes6",
+  "ingredients": [
+    {
+      "item": "minecraft:cobblestone"
+    },
+    {
+      "item": "minecraft:planks",
+      "data": 0
+    },
+    {
+      "item": "iron:coal_fragment"
+    }
+  ],
+  "result": {
+    "item": "iron:IrON_ore"
+  }
+}

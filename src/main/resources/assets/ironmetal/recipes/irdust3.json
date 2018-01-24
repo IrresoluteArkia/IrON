@@ -1,0 +1,16 @@
+{
+  "type": "forge:ore_shapeless",
+  "group": "recipes11",
+  "ingredients": [
+    {
+      "item": "ironmetal:shroomite_hammer"
+    },
+    {
+      "item": "iron:IrON_ore"
+    }
+  ],
+  "result": {
+    "item": "ironmetal:iron_dust",
+    "count": 4
+  }
+}

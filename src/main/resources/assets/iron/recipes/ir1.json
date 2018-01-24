@@ -1,0 +1,19 @@
+{
+  "type": "forge:ore_shapeless",
+  "group": "recipes5",
+  "ingredients": [
+    {
+      "item": "iron:IrON"
+    },
+    {
+      "item": "iron:IrON"
+    },
+    {
+      "item": "iron:IrON"
+    }
+  ],
+  "result": {
+    "item": "iron:IridiumIngot0",
+    "data": 0
+  }
+}

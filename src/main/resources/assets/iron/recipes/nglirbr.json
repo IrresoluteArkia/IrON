@@ -1,0 +1,12 @@
+{
+  "type": "forge:ore_shapeless",
+  "group": "recipes",
+  "ingredients": [
+    {
+      "item": "iron:nglowing_iridium_brick"
+    }
+  ],
+  "result": {
+    "item": "iron:glowing_iridium_brick"
+  }
+}

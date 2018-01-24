@@ -1,0 +1,14 @@
+{
+  "type": "forge:ore_shapeless",
+  "group": "recipes7",
+  "ingredients": [
+    {
+      "item": "iron:octridium_block"
+    }
+  ],
+  "result": {
+    "item": "iron:IridiumIngot7",
+    "data": 0,
+    "count": 9
+  }
+}

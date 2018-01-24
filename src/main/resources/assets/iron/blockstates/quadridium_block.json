@@ -1,0 +1,5 @@
+{
+    "variants": {
+        "normal": { "model": "iron:quadridium_block" }
+    }
+}

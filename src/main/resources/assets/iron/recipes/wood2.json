@@ -1,0 +1,22 @@
+{
+  "type": "forge:ore_shapeless",
+  "group": "recipes9",
+  "ingredients": [
+    {
+      "item": "iron:IrON"
+    },
+    {
+      "item": "minecraft:dye",
+      "data": 15
+    },
+    {
+      "item": "minecraft:sapling",
+      "data": 0
+    }
+  ],
+  "result": {
+    "item": "minecraft:log",
+    "data": 0,
+    "count": 16
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "type": "forge:ore_shapeless",
+  "group": "recipes8",
+  "ingredients": [
+    {
+      "item": "iron:IridiumIngot1",
+      "data": 0
+    }
+  ],
+  "result": {
+    "item": "iron:IridiumIngot0",
+    "data": 0,
+    "count": 4
+  }
+}

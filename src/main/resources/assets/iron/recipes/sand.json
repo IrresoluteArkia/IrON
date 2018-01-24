@@ -1,0 +1,16 @@
+{
+  "type": "forge:ore_shapeless",
+  "group": "recipes4",
+  "ingredients": [
+    {
+      "item": "minecraft:gravel"
+    },
+    {
+      "item": "iron:IrON"
+    }
+  ],
+  "result": {
+    "item": "minecraft:sand",
+    "data": 0
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "type": "forge:ore_shapeless",
+  "group": "recipes4",
+  "ingredients": [
+    {
+      "item": "minecraft:cobblestone"
+    },
+    {
+      "item": "iron:IrON"
+    }
+  ],
+  "result": {
+    "item": "minecraft:gravel"
+  }
+}

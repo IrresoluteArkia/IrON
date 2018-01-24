@@ -1,0 +1,30 @@
+[
+{
+  "modid": "iron",
+  "name": "IrON",
+  "description": "Adds IrON, a few decorative blocks, and some other useful recipes for skyblock",
+  "version": ${version},
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["IrresoluteArkia"],
+  "credits": "...",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+},
+{
+  "modid": "ironmetal",
+  "name": "IrON Metals",
+  "description": "An extension mod for IrON, mostly to make it more compatible with other mods; especially Omega Craft",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["IrresoluteArkia"],
+  "credits": "...",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

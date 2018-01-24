@@ -1,0 +1,23 @@
+{
+  "type": "forge:ore_shapeless",
+  "group": "recipes3",
+  "ingredients": [
+    {
+      "item": "iron:coal_fragment"
+    },
+    {
+      "item": "iron:coal_fragment"
+    },
+    {
+      "item": "iron:coal_fragment"
+    },
+    {
+      "item": "iron:coal_fragment"
+    }
+  ],
+  "result": {
+    "item": "minecraft:coal",
+    "data": 1,
+    "count": 1
+  }
+}

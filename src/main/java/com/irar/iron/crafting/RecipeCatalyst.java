@@ -5,6 +5,8 @@ import java.util.Collection;
 
 import javax.annotation.Nonnull;
 
+import com.irar.iron.items.ItemCatalyst.CatalystCraftingInventory;
+
 import net.minecraft.inventory.InventoryCrafting;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
@@ -13,6 +15,7 @@ import net.minecraft.item.crafting.Ingredient;
 import net.minecraft.util.NonNullList;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.World;
+import net.minecraftforge.common.ForgeHooks;
 import net.minecraftforge.oredict.OreDictionary;
 
 public class RecipeCatalyst implements IRecipe{
@@ -78,6 +81,15 @@ public class RecipeCatalyst implements IRecipe{
 	@Override
 	public ItemStack getRecipeOutput() {
 		return result.copy();
+	}
+
+	public NonNullList<ItemStack> getRemainingItems(CatalystCraftingInventory cm) {
+        NonNullList<ItemStack> ret = NonNullList.withSize(cm.getSizeInventory() - 1, ItemStack.EMPTY);
+        for (int i = 0; i < ret.size(); i++)
+        {
+            ret.set(i, ForgeHooks.getContainerItem(cm.getStackInSlot(i)));
+        }
+        return ret;
 	}
 
 }

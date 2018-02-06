@@ -11,6 +11,7 @@ import net.minecraft.inventory.Container;
 import net.minecraft.inventory.InventoryCrafting;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraft.item.crafting.IRecipe;
 import net.minecraft.item.crafting.Ingredient;
 import net.minecraft.util.NonNullList;
 import net.minecraftforge.oredict.OreDictionary;
@@ -76,6 +77,16 @@ public class CraftingTierNonadium {
 			}
 		}
 		return CraftingTierOctridium.getMatchingRecipeResult(ingredients);
+	}
+	
+	public static IRecipe getMatchingRecipe(ArrayList<ItemStack> ingredients){
+		for(int i = 0; i < instance.recipes.size(); i++){
+			InventoryCrafting inv = getInvCrafting(ingredients);
+			if(instance.recipes.get(i).matches(inv, null)){
+				return instance.recipes.get(i);
+			}
+		}
+		return CraftingTierOctridium.getMatchingRecipe(ingredients);
 	}
 	
 	private static InventoryCrafting getInvCrafting(ArrayList<ItemStack> ingredients) {

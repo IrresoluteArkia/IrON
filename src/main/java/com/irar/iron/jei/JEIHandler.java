@@ -11,6 +11,26 @@ import com.irar.iron.crafting.CraftingTierSeptridium;
 import com.irar.iron.crafting.CraftingTierSextridium;
 import com.irar.iron.crafting.CraftingTierTriridium;
 import com.irar.iron.crafting.RecipeCatalyst;
+import com.irar.iron.gui.client.GuiCatalystTierBiridium;
+import com.irar.iron.gui.client.GuiCatalystTierDecadrium;
+import com.irar.iron.gui.client.GuiCatalystTierIridium;
+import com.irar.iron.gui.client.GuiCatalystTierNonadium;
+import com.irar.iron.gui.client.GuiCatalystTierOctridium;
+import com.irar.iron.gui.client.GuiCatalystTierQuadridium;
+import com.irar.iron.gui.client.GuiCatalystTierQuintridium;
+import com.irar.iron.gui.client.GuiCatalystTierSeptridium;
+import com.irar.iron.gui.client.GuiCatalystTierSextridium;
+import com.irar.iron.gui.client.GuiCatalystTierTriridium;
+import com.irar.iron.gui.container.ContainerCatalystTierBiridium;
+import com.irar.iron.gui.container.ContainerCatalystTierDecadrium;
+import com.irar.iron.gui.container.ContainerCatalystTierIridium;
+import com.irar.iron.gui.container.ContainerCatalystTierNonadium;
+import com.irar.iron.gui.container.ContainerCatalystTierOctridium;
+import com.irar.iron.gui.container.ContainerCatalystTierQuadridium;
+import com.irar.iron.gui.container.ContainerCatalystTierQuintridium;
+import com.irar.iron.gui.container.ContainerCatalystTierSeptridium;
+import com.irar.iron.gui.container.ContainerCatalystTierSextridium;
+import com.irar.iron.gui.container.ContainerCatalystTierTriridium;
 import com.irar.iron.handlers.ItemHandler;
 import com.irar.iron.jei.catalyst.BiridiumUid;
 import com.irar.iron.jei.catalyst.DecadriumUid;
@@ -75,6 +95,7 @@ public class JEIHandler implements IModPlugin{
 	public void register(IModRegistry registry) {
 		final IIngredientRegistry ingredientRegistry = registry.getIngredientRegistry();
 		final IJeiHelpers jeiHelpers = registry.getJeiHelpers();
+		final IRecipeTransferRegistry transferRegistry = registry.getRecipeTransferRegistry();
 
 		registry.addRecipes(CraftingTierIridium.getInstance().recipes, IrONCategoryUid.CATALYSTIRIDIUM);
 		registry.addRecipes(CraftingTierBiridium.getInstance().recipes, IrONCategoryUid.CATALYSTBIRIDIUM);
@@ -98,10 +119,28 @@ public class JEIHandler implements IModPlugin{
 		registry.handleRecipes(RecipeCatalyst.class, recipe -> new IridiumWrapper(jeiHelpers, recipe), IrONCategoryUid.CATALYSTNONADIUM);
 		registry.handleRecipes(RecipeCatalyst.class, recipe -> new IridiumWrapper(jeiHelpers, recipe), IrONCategoryUid.CATALYSTDECADRIUM);
 
-//		IRecipeTransferRegistry recipeTransferRegistry = registry.getRecipeTransferRegistry();
+		transferRegistry.addRecipeTransferHandler(ContainerCatalystTierIridium.class, IrONCategoryUid.CATALYSTIRIDIUM, 0, 9, 10, 36);
+		transferRegistry.addRecipeTransferHandler(ContainerCatalystTierBiridium.class, IrONCategoryUid.CATALYSTBIRIDIUM, 0, 9, 10, 36);
+		transferRegistry.addRecipeTransferHandler(ContainerCatalystTierTriridium.class, IrONCategoryUid.CATALYSTTRIRIDIUM, 0, 9, 10, 36);
+		transferRegistry.addRecipeTransferHandler(ContainerCatalystTierQuadridium.class, IrONCategoryUid.CATALYSTQUADRIDIUM, 0, 9, 10, 36);
+		transferRegistry.addRecipeTransferHandler(ContainerCatalystTierQuintridium.class, IrONCategoryUid.CATALYSTQUINTRIDIUM, 0, 9, 10, 36);
+		transferRegistry.addRecipeTransferHandler(ContainerCatalystTierSextridium.class, IrONCategoryUid.CATALYSTSEXTRIDIUM, 0, 9, 10, 36);
+		transferRegistry.addRecipeTransferHandler(ContainerCatalystTierSeptridium.class, IrONCategoryUid.CATALYSTSEPTRIDIUM, 0, 9, 10, 36);
+		transferRegistry.addRecipeTransferHandler(ContainerCatalystTierOctridium.class, IrONCategoryUid.CATALYSTOCTRIDIUM, 0, 9, 10, 36);
+		transferRegistry.addRecipeTransferHandler(ContainerCatalystTierNonadium.class, IrONCategoryUid.CATALYSTNONADIUM, 0, 9, 10, 36);
+		transferRegistry.addRecipeTransferHandler(ContainerCatalystTierDecadrium.class, IrONCategoryUid.CATALYSTDECADRIUM, 0, 9, 10, 36);
 
-//		recipeTransferRegistry.addRecipeTransferHandler(ContainerWorkbench.class, VanillaRecipeCategoryUid.CRAFTING, 1, 9, 10, 36);
-
+		registry.addRecipeClickArea(GuiCatalystTierIridium.class, 115, 44, 17, 18, IrONCategoryUid.CATALYSTIRIDIUM);
+		registry.addRecipeClickArea(GuiCatalystTierBiridium.class, 115, 44, 17, 18, IrONCategoryUid.CATALYSTBIRIDIUM);
+		registry.addRecipeClickArea(GuiCatalystTierTriridium.class, 115, 44, 17, 18, IrONCategoryUid.CATALYSTTRIRIDIUM);
+		registry.addRecipeClickArea(GuiCatalystTierQuadridium.class, 115, 44, 17, 18, IrONCategoryUid.CATALYSTQUADRIDIUM);
+		registry.addRecipeClickArea(GuiCatalystTierQuintridium.class, 115, 44, 17, 18, IrONCategoryUid.CATALYSTQUINTRIDIUM);
+		registry.addRecipeClickArea(GuiCatalystTierSextridium.class, 115, 44, 17, 18, IrONCategoryUid.CATALYSTSEXTRIDIUM);
+		registry.addRecipeClickArea(GuiCatalystTierSeptridium.class, 115, 44, 17, 18, IrONCategoryUid.CATALYSTSEPTRIDIUM);
+		registry.addRecipeClickArea(GuiCatalystTierOctridium.class, 115, 44, 17, 18, IrONCategoryUid.CATALYSTOCTRIDIUM);
+		registry.addRecipeClickArea(GuiCatalystTierNonadium.class, 115, 44, 17, 18, IrONCategoryUid.CATALYSTNONADIUM);
+		registry.addRecipeClickArea(GuiCatalystTierDecadrium.class, 115, 44, 17, 18, IrONCategoryUid.CATALYSTDECADRIUM);
+		
 		registry.addRecipeCatalyst(new ItemStack(ItemHandler.IridiumC), IrONCategoryUid.CATALYSTIRIDIUM);
 		registry.addRecipeCatalyst(new ItemStack(ItemHandler.BiridiumC), IrONCategoryUid.CATALYSTIRIDIUM);
 		registry.addRecipeCatalyst(new ItemStack(ItemHandler.TriridiumC), IrONCategoryUid.CATALYSTIRIDIUM);

@@ -38,7 +38,7 @@ public class ContainerCatalystTierNonadium extends Container{
 	    this.addSlotToContainer(new Slot(cci, 6, 31, 71));
 	    this.addSlotToContainer(new Slot(cci, 7, 58, 75));
 	    this.addSlotToContainer(new Slot(cci, 8, 87, 71));
-	    this.addSlotToContainer(new SlotResult(cci, 9, 138, 45));
+	    this.addSlotToContainer(new SlotResult(cci, 9, 138, 45, playerInv.player));
 	    
 
 	    // Player Inventory, Slot 9-35, Slot IDs 9-35
@@ -59,32 +59,42 @@ public class ContainerCatalystTierNonadium extends Container{
 		return true;
 	}
 
-	@Nullable
 	@Override
-	public ItemStack transferStackInSlot(EntityPlayer playerIn, int fromSlot) {
+    public ItemStack transferStackInSlot(EntityPlayer playerIn, int index)
+    {
         ItemStack itemstack = ItemStack.EMPTY;
-        Slot slot = this.inventorySlots.get(fromSlot);
+        Slot slot = this.inventorySlots.get(index);
 
-        if(fromSlot == 9){
-/*        	while(!this.inventoryItemStacks.get(9).isEmpty() && this.mergeItemStack(this.inventoryItemStacks.get(9), 10, 46, true)){
-    			
-        	}*/
-        	return itemstack;
-        }
-        
         if (slot != null && slot.getHasStack())
         {
             ItemStack itemstack1 = slot.getStack();
             itemstack = itemstack1.copy();
 
-            if (fromSlot < 10)
+            if (index == 9)
             {
+
                 if (!this.mergeItemStack(itemstack1, 10, 46, true))
                 {
                     return ItemStack.EMPTY;
                 }
+
+                slot.onSlotChange(itemstack1, itemstack);
             }
-            else if (!this.mergeItemStack(itemstack1, 0, 9, false))
+            else if (index >= 10 && index < 37)
+            {
+                if (!this.mergeItemStack(itemstack1, 37, 46, false))
+                {
+                    return ItemStack.EMPTY;
+                }
+            }
+            else if (index >= 37 && index < 46)
+            {
+                if (!this.mergeItemStack(itemstack1, 10, 37, false))
+                {
+                    return ItemStack.EMPTY;
+                }
+            }
+            else if (!this.mergeItemStack(itemstack1, 10, 46, false))
             {
                 return ItemStack.EMPTY;
             }
@@ -103,12 +113,16 @@ public class ContainerCatalystTierNonadium extends Container{
                 return ItemStack.EMPTY;
             }
 
-            slot.onTake(playerIn, itemstack1);
+            ItemStack itemstack2 = slot.onTake(playerIn, itemstack1);
+
+            if (index == 9)
+            {
+                playerIn.dropItem(itemstack2, false);
+            }
         }
 
-        cci.update();
         return itemstack;
-	}
+    }
 	
 	@Override
 	public void onContainerClosed(EntityPlayer playerIn){

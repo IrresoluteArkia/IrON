@@ -27,6 +27,7 @@ import net.minecraft.inventory.IInventory;
 import net.minecraft.inventory.ItemStackHelper;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraft.item.crafting.IRecipe;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.EnumActionResult;
@@ -254,11 +255,11 @@ public class ItemCatalyst extends ModItem{
 		@Override
 		public ItemStack decrStackSize(int index, int count) {
 	        ItemStack itemstack = ItemStackHelper.getAndSplit(this.inventory, index, count);
-		    if(index == 9){
+		    /*if(index == 9){
 		    	for(int i = 0; i < 9; i++){
 		    		this.decrStackSize(i, 1);
 		    	}
-		    }
+		    }*/
 	        if (!itemstack.isEmpty())
 	        {
 	            this.markDirty();
@@ -356,6 +357,28 @@ public class ItemCatalyst extends ModItem{
 		@Override
 		public void markDirty() {
 			
+		}
+
+
+		public IRecipe getRecipeUsed() {
+	    	ArrayList<ItemStack> ingredients = new ArrayList<ItemStack>();
+	    	
+	    	for(int i = 0; i < 9; i++){
+	    		ingredients.add(inventory.get(i));
+	    	}
+	    	switch(tier){
+	    		case "iridium": return CraftingTierIridium.getInstance().getMatchingRecipe(ingredients);
+	    		case "biridium": return CraftingTierBiridium.getInstance().getMatchingRecipe(ingredients);
+	    		case "triridium": return CraftingTierTriridium.getInstance().getMatchingRecipe(ingredients);
+	    		case "quadridium": return CraftingTierQuadridium.getInstance().getMatchingRecipe(ingredients);
+	    		case "quintridium": return CraftingTierQuintridium.getInstance().getMatchingRecipe(ingredients);
+	    		case "sextridium": return CraftingTierSextridium.getInstance().getMatchingRecipe(ingredients);
+	    		case "septridium": return CraftingTierSeptridium.getInstance().getMatchingRecipe(ingredients);
+	    		case "octridium": return CraftingTierOctridium.getInstance().getMatchingRecipe(ingredients);
+	    		case "nonadium": return CraftingTierNonadium.getInstance().getMatchingRecipe(ingredients);
+	    		case "decadrium": return CraftingTierDecadrium.getInstance().getMatchingRecipe(ingredients);
+	    	}
+	    	return null;
 		}
 
 

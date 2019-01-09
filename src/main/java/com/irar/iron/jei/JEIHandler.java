@@ -120,26 +120,80 @@ public class JEIHandler implements IModPlugin{
 		registry.handleRecipes(RecipeCatalyst.class, recipe -> new IridiumWrapper(jeiHelpers, recipe), IrONCategoryUid.CATALYSTDECADRIUM);
 
 		transferRegistry.addRecipeTransferHandler(ContainerCatalystTierIridium.class, IrONCategoryUid.CATALYSTIRIDIUM, 0, 9, 10, 36);
+		transferRegistry.addRecipeTransferHandler(ContainerCatalystTierBiridium.class, IrONCategoryUid.CATALYSTIRIDIUM, 0, 9, 10, 36);
+		transferRegistry.addRecipeTransferHandler(ContainerCatalystTierTriridium.class, IrONCategoryUid.CATALYSTIRIDIUM, 0, 9, 10, 36);
+		transferRegistry.addRecipeTransferHandler(ContainerCatalystTierQuadridium.class, IrONCategoryUid.CATALYSTIRIDIUM, 0, 9, 10, 36);
+		transferRegistry.addRecipeTransferHandler(ContainerCatalystTierQuintridium.class, IrONCategoryUid.CATALYSTIRIDIUM, 0, 9, 10, 36);
+		transferRegistry.addRecipeTransferHandler(ContainerCatalystTierSextridium.class, IrONCategoryUid.CATALYSTIRIDIUM, 0, 9, 10, 36);
+		transferRegistry.addRecipeTransferHandler(ContainerCatalystTierSeptridium.class, IrONCategoryUid.CATALYSTIRIDIUM, 0, 9, 10, 36);
+		transferRegistry.addRecipeTransferHandler(ContainerCatalystTierOctridium.class, IrONCategoryUid.CATALYSTIRIDIUM, 0, 9, 10, 36);
+		transferRegistry.addRecipeTransferHandler(ContainerCatalystTierNonadium.class, IrONCategoryUid.CATALYSTIRIDIUM, 0, 9, 10, 36);
+		transferRegistry.addRecipeTransferHandler(ContainerCatalystTierDecadrium.class, IrONCategoryUid.CATALYSTIRIDIUM, 0, 9, 10, 36);
+
 		transferRegistry.addRecipeTransferHandler(ContainerCatalystTierBiridium.class, IrONCategoryUid.CATALYSTBIRIDIUM, 0, 9, 10, 36);
+		transferRegistry.addRecipeTransferHandler(ContainerCatalystTierTriridium.class, IrONCategoryUid.CATALYSTBIRIDIUM, 0, 9, 10, 36);
+		transferRegistry.addRecipeTransferHandler(ContainerCatalystTierQuadridium.class, IrONCategoryUid.CATALYSTBIRIDIUM, 0, 9, 10, 36);
+		transferRegistry.addRecipeTransferHandler(ContainerCatalystTierQuintridium.class, IrONCategoryUid.CATALYSTBIRIDIUM, 0, 9, 10, 36);
+		transferRegistry.addRecipeTransferHandler(ContainerCatalystTierSextridium.class, IrONCategoryUid.CATALYSTBIRIDIUM, 0, 9, 10, 36);
+		transferRegistry.addRecipeTransferHandler(ContainerCatalystTierSeptridium.class, IrONCategoryUid.CATALYSTBIRIDIUM, 0, 9, 10, 36);
+		transferRegistry.addRecipeTransferHandler(ContainerCatalystTierOctridium.class, IrONCategoryUid.CATALYSTBIRIDIUM, 0, 9, 10, 36);
+		transferRegistry.addRecipeTransferHandler(ContainerCatalystTierNonadium.class, IrONCategoryUid.CATALYSTBIRIDIUM, 0, 9, 10, 36);
+		transferRegistry.addRecipeTransferHandler(ContainerCatalystTierDecadrium.class, IrONCategoryUid.CATALYSTBIRIDIUM, 0, 9, 10, 36);
+
 		transferRegistry.addRecipeTransferHandler(ContainerCatalystTierTriridium.class, IrONCategoryUid.CATALYSTTRIRIDIUM, 0, 9, 10, 36);
+		transferRegistry.addRecipeTransferHandler(ContainerCatalystTierQuadridium.class, IrONCategoryUid.CATALYSTTRIRIDIUM, 0, 9, 10, 36);
+		transferRegistry.addRecipeTransferHandler(ContainerCatalystTierQuintridium.class, IrONCategoryUid.CATALYSTTRIRIDIUM, 0, 9, 10, 36);
+		transferRegistry.addRecipeTransferHandler(ContainerCatalystTierSextridium.class, IrONCategoryUid.CATALYSTTRIRIDIUM, 0, 9, 10, 36);
+		transferRegistry.addRecipeTransferHandler(ContainerCatalystTierSeptridium.class, IrONCategoryUid.CATALYSTTRIRIDIUM, 0, 9, 10, 36);
+		transferRegistry.addRecipeTransferHandler(ContainerCatalystTierOctridium.class, IrONCategoryUid.CATALYSTTRIRIDIUM, 0, 9, 10, 36);
+		transferRegistry.addRecipeTransferHandler(ContainerCatalystTierNonadium.class, IrONCategoryUid.CATALYSTTRIRIDIUM, 0, 9, 10, 36);
+		transferRegistry.addRecipeTransferHandler(ContainerCatalystTierDecadrium.class, IrONCategoryUid.CATALYSTTRIRIDIUM, 0, 9, 10, 36);
+
 		transferRegistry.addRecipeTransferHandler(ContainerCatalystTierQuadridium.class, IrONCategoryUid.CATALYSTQUADRIDIUM, 0, 9, 10, 36);
+		transferRegistry.addRecipeTransferHandler(ContainerCatalystTierQuintridium.class, IrONCategoryUid.CATALYSTQUADRIDIUM, 0, 9, 10, 36);
+		transferRegistry.addRecipeTransferHandler(ContainerCatalystTierSextridium.class, IrONCategoryUid.CATALYSTQUADRIDIUM, 0, 9, 10, 36);
+		transferRegistry.addRecipeTransferHandler(ContainerCatalystTierSeptridium.class, IrONCategoryUid.CATALYSTQUADRIDIUM, 0, 9, 10, 36);
+		transferRegistry.addRecipeTransferHandler(ContainerCatalystTierOctridium.class, IrONCategoryUid.CATALYSTQUADRIDIUM, 0, 9, 10, 36);
+		transferRegistry.addRecipeTransferHandler(ContainerCatalystTierNonadium.class, IrONCategoryUid.CATALYSTQUADRIDIUM, 0, 9, 10, 36);
+		transferRegistry.addRecipeTransferHandler(ContainerCatalystTierDecadrium.class, IrONCategoryUid.CATALYSTQUADRIDIUM, 0, 9, 10, 36);
+
 		transferRegistry.addRecipeTransferHandler(ContainerCatalystTierQuintridium.class, IrONCategoryUid.CATALYSTQUINTRIDIUM, 0, 9, 10, 36);
+		transferRegistry.addRecipeTransferHandler(ContainerCatalystTierSextridium.class, IrONCategoryUid.CATALYSTQUINTRIDIUM, 0, 9, 10, 36);
+		transferRegistry.addRecipeTransferHandler(ContainerCatalystTierSeptridium.class, IrONCategoryUid.CATALYSTQUINTRIDIUM, 0, 9, 10, 36);
+		transferRegistry.addRecipeTransferHandler(ContainerCatalystTierOctridium.class, IrONCategoryUid.CATALYSTQUINTRIDIUM, 0, 9, 10, 36);
+		transferRegistry.addRecipeTransferHandler(ContainerCatalystTierNonadium.class, IrONCategoryUid.CATALYSTQUINTRIDIUM, 0, 9, 10, 36);
+		transferRegistry.addRecipeTransferHandler(ContainerCatalystTierDecadrium.class, IrONCategoryUid.CATALYSTQUINTRIDIUM, 0, 9, 10, 36);
+
 		transferRegistry.addRecipeTransferHandler(ContainerCatalystTierSextridium.class, IrONCategoryUid.CATALYSTSEXTRIDIUM, 0, 9, 10, 36);
+		transferRegistry.addRecipeTransferHandler(ContainerCatalystTierSeptridium.class, IrONCategoryUid.CATALYSTSEXTRIDIUM, 0, 9, 10, 36);
+		transferRegistry.addRecipeTransferHandler(ContainerCatalystTierOctridium.class, IrONCategoryUid.CATALYSTSEXTRIDIUM, 0, 9, 10, 36);
+		transferRegistry.addRecipeTransferHandler(ContainerCatalystTierNonadium.class, IrONCategoryUid.CATALYSTSEXTRIDIUM, 0, 9, 10, 36);
+		transferRegistry.addRecipeTransferHandler(ContainerCatalystTierDecadrium.class, IrONCategoryUid.CATALYSTSEXTRIDIUM, 0, 9, 10, 36);
+
 		transferRegistry.addRecipeTransferHandler(ContainerCatalystTierSeptridium.class, IrONCategoryUid.CATALYSTSEPTRIDIUM, 0, 9, 10, 36);
+		transferRegistry.addRecipeTransferHandler(ContainerCatalystTierOctridium.class, IrONCategoryUid.CATALYSTSEPTRIDIUM, 0, 9, 10, 36);
+		transferRegistry.addRecipeTransferHandler(ContainerCatalystTierNonadium.class, IrONCategoryUid.CATALYSTSEPTRIDIUM, 0, 9, 10, 36);
+		transferRegistry.addRecipeTransferHandler(ContainerCatalystTierDecadrium.class, IrONCategoryUid.CATALYSTSEPTRIDIUM, 0, 9, 10, 36);
+
 		transferRegistry.addRecipeTransferHandler(ContainerCatalystTierOctridium.class, IrONCategoryUid.CATALYSTOCTRIDIUM, 0, 9, 10, 36);
+		transferRegistry.addRecipeTransferHandler(ContainerCatalystTierNonadium.class, IrONCategoryUid.CATALYSTOCTRIDIUM, 0, 9, 10, 36);
+		transferRegistry.addRecipeTransferHandler(ContainerCatalystTierDecadrium.class, IrONCategoryUid.CATALYSTOCTRIDIUM, 0, 9, 10, 36);
+
 		transferRegistry.addRecipeTransferHandler(ContainerCatalystTierNonadium.class, IrONCategoryUid.CATALYSTNONADIUM, 0, 9, 10, 36);
+		transferRegistry.addRecipeTransferHandler(ContainerCatalystTierDecadrium.class, IrONCategoryUid.CATALYSTNONADIUM, 0, 9, 10, 36);
+
 		transferRegistry.addRecipeTransferHandler(ContainerCatalystTierDecadrium.class, IrONCategoryUid.CATALYSTDECADRIUM, 0, 9, 10, 36);
 
 		registry.addRecipeClickArea(GuiCatalystTierIridium.class, 115, 44, 17, 18, IrONCategoryUid.CATALYSTIRIDIUM);
-		registry.addRecipeClickArea(GuiCatalystTierBiridium.class, 115, 44, 17, 18, IrONCategoryUid.CATALYSTBIRIDIUM);
-		registry.addRecipeClickArea(GuiCatalystTierTriridium.class, 115, 44, 17, 18, IrONCategoryUid.CATALYSTTRIRIDIUM);
-		registry.addRecipeClickArea(GuiCatalystTierQuadridium.class, 115, 44, 17, 18, IrONCategoryUid.CATALYSTQUADRIDIUM);
-		registry.addRecipeClickArea(GuiCatalystTierQuintridium.class, 115, 44, 17, 18, IrONCategoryUid.CATALYSTQUINTRIDIUM);
-		registry.addRecipeClickArea(GuiCatalystTierSextridium.class, 115, 44, 17, 18, IrONCategoryUid.CATALYSTSEXTRIDIUM);
-		registry.addRecipeClickArea(GuiCatalystTierSeptridium.class, 115, 44, 17, 18, IrONCategoryUid.CATALYSTSEPTRIDIUM);
-		registry.addRecipeClickArea(GuiCatalystTierOctridium.class, 115, 44, 17, 18, IrONCategoryUid.CATALYSTOCTRIDIUM);
-		registry.addRecipeClickArea(GuiCatalystTierNonadium.class, 115, 44, 17, 18, IrONCategoryUid.CATALYSTNONADIUM);
-		registry.addRecipeClickArea(GuiCatalystTierDecadrium.class, 115, 44, 17, 18, IrONCategoryUid.CATALYSTDECADRIUM);
+		registry.addRecipeClickArea(GuiCatalystTierBiridium.class, 115, 44, 17, 18, IrONCategoryUid.CATALYSTIRIDIUM, IrONCategoryUid.CATALYSTBIRIDIUM);
+		registry.addRecipeClickArea(GuiCatalystTierTriridium.class, 115, 44, 17, 18, IrONCategoryUid.CATALYSTIRIDIUM, IrONCategoryUid.CATALYSTBIRIDIUM, IrONCategoryUid.CATALYSTTRIRIDIUM);
+		registry.addRecipeClickArea(GuiCatalystTierQuadridium.class, 115, 44, 17, 18, IrONCategoryUid.CATALYSTIRIDIUM, IrONCategoryUid.CATALYSTBIRIDIUM, IrONCategoryUid.CATALYSTTRIRIDIUM, IrONCategoryUid.CATALYSTQUADRIDIUM);
+		registry.addRecipeClickArea(GuiCatalystTierQuintridium.class, 115, 44, 17, 18, IrONCategoryUid.CATALYSTIRIDIUM, IrONCategoryUid.CATALYSTBIRIDIUM, IrONCategoryUid.CATALYSTTRIRIDIUM, IrONCategoryUid.CATALYSTQUADRIDIUM, IrONCategoryUid.CATALYSTQUINTRIDIUM);
+		registry.addRecipeClickArea(GuiCatalystTierSextridium.class, 115, 44, 17, 18, IrONCategoryUid.CATALYSTIRIDIUM, IrONCategoryUid.CATALYSTBIRIDIUM, IrONCategoryUid.CATALYSTTRIRIDIUM, IrONCategoryUid.CATALYSTQUADRIDIUM, IrONCategoryUid.CATALYSTQUINTRIDIUM, IrONCategoryUid.CATALYSTSEXTRIDIUM);
+		registry.addRecipeClickArea(GuiCatalystTierSeptridium.class, 115, 44, 17, 18, IrONCategoryUid.CATALYSTIRIDIUM, IrONCategoryUid.CATALYSTBIRIDIUM, IrONCategoryUid.CATALYSTTRIRIDIUM, IrONCategoryUid.CATALYSTQUADRIDIUM, IrONCategoryUid.CATALYSTQUINTRIDIUM, IrONCategoryUid.CATALYSTSEXTRIDIUM, IrONCategoryUid.CATALYSTSEPTRIDIUM);
+		registry.addRecipeClickArea(GuiCatalystTierOctridium.class, 115, 44, 17, 18, IrONCategoryUid.CATALYSTIRIDIUM, IrONCategoryUid.CATALYSTBIRIDIUM, IrONCategoryUid.CATALYSTTRIRIDIUM, IrONCategoryUid.CATALYSTQUADRIDIUM, IrONCategoryUid.CATALYSTQUINTRIDIUM, IrONCategoryUid.CATALYSTSEXTRIDIUM, IrONCategoryUid.CATALYSTSEPTRIDIUM, IrONCategoryUid.CATALYSTOCTRIDIUM);
+		registry.addRecipeClickArea(GuiCatalystTierNonadium.class, 115, 44, 17, 18, IrONCategoryUid.CATALYSTIRIDIUM, IrONCategoryUid.CATALYSTBIRIDIUM, IrONCategoryUid.CATALYSTTRIRIDIUM, IrONCategoryUid.CATALYSTQUADRIDIUM, IrONCategoryUid.CATALYSTQUINTRIDIUM, IrONCategoryUid.CATALYSTSEXTRIDIUM, IrONCategoryUid.CATALYSTSEPTRIDIUM, IrONCategoryUid.CATALYSTOCTRIDIUM, IrONCategoryUid.CATALYSTNONADIUM);
+		registry.addRecipeClickArea(GuiCatalystTierDecadrium.class, 115, 44, 17, 18, IrONCategoryUid.CATALYSTIRIDIUM, IrONCategoryUid.CATALYSTBIRIDIUM, IrONCategoryUid.CATALYSTTRIRIDIUM, IrONCategoryUid.CATALYSTQUADRIDIUM, IrONCategoryUid.CATALYSTQUINTRIDIUM, IrONCategoryUid.CATALYSTSEXTRIDIUM, IrONCategoryUid.CATALYSTSEPTRIDIUM, IrONCategoryUid.CATALYSTOCTRIDIUM, IrONCategoryUid.CATALYSTNONADIUM, IrONCategoryUid.CATALYSTDECADRIUM);
 		
 		registry.addRecipeCatalyst(new ItemStack(ItemHandler.IridiumC), IrONCategoryUid.CATALYSTIRIDIUM);
 		registry.addRecipeCatalyst(new ItemStack(ItemHandler.BiridiumC), IrONCategoryUid.CATALYSTIRIDIUM);
